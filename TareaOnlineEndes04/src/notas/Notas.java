@@ -8,12 +8,12 @@ public class Notas {
 		
 		Scanner reader = new Scanner(System.in);// Para pedir números por teclado
 		
-		int nota = 0;
+		int num_nota = 0;
 		String calificacion = "";
 		System.out.print("Introduzca una nota: ");
-		nota = reader.nextInt();
+		num_nota = reader.nextInt();
 		
-		calificacion = cali(nota);
+		calificacion = califica(num_nota);
 		
 		System.out.println(calificacion);
 		reader.close();
@@ -23,7 +23,7 @@ public class Notas {
 	 * @param nota
 	 * @return
 	 */
-	public static String cali(int nota) {
+	public static String califica(int nota) {
 		String calificacion;
 		if (nota >= 0 && nota < 5)
 		calificacion = "Suspenso";
